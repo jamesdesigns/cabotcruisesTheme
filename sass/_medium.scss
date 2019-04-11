@@ -1,0 +1,79 @@
+/**/
+header {
+
+
+    div.telephone {
+		i{font-size: 1.75rem;}
+
+        a{
+
+			color: #005b97;
+			text-decoration: none;
+			font-size: 1.58rem;
+			font-weight: 800;
+			// color: $secondaryColor; 
+			// text-decoration: none; 
+			// font-size: 1.78rem; 
+			// font-weight: $normalWeight;
+		
+		}
+        span{display: inline;}
+    } //end telephone
+}
+
+
+
+/* MAIN  */
+
+h1 {font-size: 2.5em;}
+
+@for $i from 1 through 12 {
+	$w:($i/12)*100%;
+	.medium-#{$i} {width: $w; float:left;}
+}
+	
+
+/* FLEXBOX CONTAiNTER */
+main.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  
+  
+  .flex-item {
+  background: gray;
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+}
+	
+div.socialIcons a {
+	font-size: 2.5rem;
+	padding-top: .75rem;
+	padding-bottom: 1.5rem;
+	// height: 6rem;
+	// width: 6rem;
+}
+
+div.associations {
+    div {flex-basis:33.333%; padding: 1rem 4%;}
+} // end associations
+
+
